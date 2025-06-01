@@ -1,14 +1,14 @@
-                                     **Digital Wallet System Backend - README**
-                                              Overview & Features
+**Digital Wallet System Backend - README**
+Overview & Features
 
-                                                **Overview**
+ **Overview**
 
 This project is a backend implementation of a Digital Wallet System. It allows users to register, log in, and
 securely manage their virtual wallets by depositing, withdrawing, and transferring funds. Alongside core wallet
 functionality, the system includes basic fraud detection to catch suspicious activity, and admin features to
 monitor flagged transactions and user statistics.
 
-                                                **Features**
+**Features**
 
 User Authentication & Security:-
 - User registration with password hashing (bcrypt) for secure storage.
@@ -33,7 +33,7 @@ executes transfers.
 Transaction Cool-Down: Enforces a 30-second wait between transfers to prevent rapid-fire transactions.
 - Disposable Wallets: Wallets that freeze after a single use for temporary or one-time transactions.
 
-                                              **Tech Stack**
+**Tech Stack**
 
 - Node.js with Express framework for backend server.
 - MongoDB for database, accessed through Mongoose ODM.
@@ -43,7 +43,7 @@ Transaction Cool-Down: Enforces a 30-second wait between transfers to prevent ra
 - nodemon for live server reload during development.
 - Postman used for API testing and documentation.
                                         
-                                         **Project Structure**
+**Project Structure**
 
 digital-wallet/
 - config/: Database connection setup
@@ -57,15 +57,14 @@ digital-wallet/
 - package.json: Dependencies and scripts
 - README.md: This documentation
 
-                                            **Getting Started**
+ **Getting Started**
 
 Prerequisites
 Make sure you have Node.js and npm installed. Also, a running MongoDB instance or MongoDB Atlas
 connection URI.
 Installation
 1. Clone the repository:
- git clone <repository-url>
- cd digital-wallet.
+
  2. Install dependencies:
  npm install
 3. Setup environment variables:
@@ -76,7 +75,7 @@ Installation
 4. Run the server:
  For development with auto reload:
  npm run start
-5. Your server will be live at http://localhost:5000.
+5. server will be live at http://localhost:5000.
 
                                                 **API Overview**
 
@@ -99,16 +98,16 @@ Use Postman to test APIs. Import the provided Postman collection for ready-to-us
 Remember to register new users with unique emails before logging in.
 Use the JWT token from login in the Authorization header (Bearer <token>) for protected routes.
 
-                                               **Screenshots**
+**Screenshots**
 
-Here are the key points where screenshots will strengthen your documentation:
+
+
 1. User registration successful response.
+![alt text](user_registration_success.jpeg)
 2. User login with JWT token received.
-3. Wallet deposit successful transaction response.
-4. Transfer transaction triggering fraud detection.
-5. Admin dashboard showing flagged transactions.
-Add these screenshots under a screenshots/ folder and link them in the README using:
-![User Registration](screenshots/user-registration.png)
+![alt text](user_login_jwt.jpeg)
+3. homepage/dashboard
+![alt text](welcome-api-homepage.jpeg)
 
                                              **Future Improvements**
 
@@ -118,7 +117,7 @@ Add these screenshots under a screenshots/ folder and link them in the README us
 - Implement soft delete functionality for users and transactions.
 - Build a frontend client for a complete user experience.
 
-                                            **Contact**
+**Contact**
 
 If you have questions or suggestions, please open an issue or contact me at Anjanapassi1510@gmail.com , anjana011btit23@igdtuw.ac.in.
 Thank you for checking out this Digital Wallet backend project. I hope it provides a solid foundation for
